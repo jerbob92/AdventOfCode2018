@@ -77,7 +77,7 @@ func partOne(file *os.File) {
 		log.Fatal(err)
 	}
 
-	log.Printf("Answer for Day 2, Part 1: Saw %d characters twice, saw %d characters trice, so checksum is %d * %d = %d", seenTwice, seenThrice, seenTwice, seenThrice, seenTwice * seenThrice)
+	log.Printf("Answer for Day 2, Part 1: Saw %d characters twice, saw %d characters trice, so checksum is %d * %d = %d", seenTwice, seenThrice, seenTwice, seenThrice, seenTwice*seenThrice)
 }
 
 func partTwo(file *os.File) {
