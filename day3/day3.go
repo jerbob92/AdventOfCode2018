@@ -17,7 +17,7 @@ func Execute() {
 
 	defer file.Close()
 
-	partOne(file)
+	partOneAndTwo(file)
 }
 
 type claim struct {
@@ -28,7 +28,7 @@ type claim struct {
 	SizeH  int64
 }
 
-func partOne(file *os.File) {
+func partOneAndTwo(file *os.File) {
 	reader := bufio.NewReader(file)
 	var err error
 

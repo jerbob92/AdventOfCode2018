@@ -18,7 +18,7 @@ func Execute() {
 
 	defer file.Close()
 
-	partOne(file)
+	partOneAndTwo(file)
 }
 
 type guard struct {
@@ -28,7 +28,7 @@ type guard struct {
 	SleepHistory  map[int]int
 }
 
-func partOne(file *os.File) {
+func partOneAndTwo(file *os.File) {
 	var err error
 	reader := bufio.NewReader(file)
 	rows := []string{}
